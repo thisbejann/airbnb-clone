@@ -14,7 +14,7 @@ export default function ClientOnly({ children }: ClientOnlyProps) {
   }, []);
 
   if (!hasMounted) {
-    return <div>Loading...</div>;
+    return null;
   }
 
   return <>{children}</>;
